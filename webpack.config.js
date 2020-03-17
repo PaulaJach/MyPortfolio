@@ -35,11 +35,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
-    //     new CopyPlugin([{
-    //         from: 'images',
-    //         to: 'images'
-    //     },
-    //  ]),
+        new CopyPlugin([{
+            from: 'img',
+            to: 'img'
+        },
+     ]),
 	new ManifestPlugin(),
     ],
 };
