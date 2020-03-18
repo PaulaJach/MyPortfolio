@@ -13,13 +13,17 @@
     "dev": "yarn browser && yarn watch",
     "fix-cs": "yarn js-beautify -r *.js src/*.js *.html && yarn scssfmt scss/*.scss"
   },
-  "dependencies": {},
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",

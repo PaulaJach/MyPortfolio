@@ -9,42 +9,80 @@
     </head>
     <body>
         <section class="landing__page">
+            <div id="particles-js" class="particles__container"></div>
             <header id="header" class="header">
                 <nav class="header__nav">
-                    <a href="#" class="header__nav--brand ">PJ</a>
+                    <a href="#home" class="header__nav--home nav__link">home</a>
                     <ul class="header__nav--ul">
                         <li class="header__nav--li">
-                            <a href="#" class="nav__link">about</a>
+                            <a href="#about" class="nav__link">about</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">skills</a>
+                            <a href="#skills" class="nav__link">skills</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">projects</a>
+                            <a href="#projects" class="nav__link">projects</a>
                         </li>
                         <li>
-                            <a href="#" class="nav__link">contact</a>
+                            <a href="#contact" class="nav__link">contact</a>
                         </li>
                     </ul>
-                    <a href="#" class="nav__CV">Download CV</a>
+                    <a href="./assets/Resume_PaulaJach.pdf" 
+                        download="newfilename" 
+                        target="_blank" 
+                        class="nav__CV">Download CV
+                    </a>
                 </nav>
-                <div class="header__nav--mobile"></div>
+               
+              <!-- <nav id="header__mobile" class="header__nav--mobile">
+                    <div class="hamburger">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                    <ul class="mobile__nav--list">
+                        <li class="mobile__nav--item">
+                            <a href="#about" class="mobile__nav--link">about</a>
+                        </li>
+                        <li class="mobile__nav--item">
+                            <a href="#skills" class="mobile__nav--link">skills</a>
+                        </li>
+                        <li class="mobile__nav--item">
+                            <a href="#projects" class="mobile__nav--link">projects</a>
+                        </li>
+                        <li class="mobile__nav--item">
+                            <a href="#contact" class="mobile__nav--link">contact</a>
+                        </li>
+                    </ul>
+                </nav>-->
+                
             </header>
+            
             <div class="hero">
             
                     <img src="./img/cv_img1.jpg" alt="hero image" class="hero__img">
             
                 <h1>Paula Jach</h1>
                 <div>
-                    <a><img class="hero__icon" src="./img/iconmonstr-github.png"/></a>
-                    <a><img  class="hero__icon" src="./img/iconmonstr-linkedin.png" /></a>
-                    <a><img class="hero__icon" src="./img/iconmonstr-gmail.png" /></a>
+                    <a href="https://github.com/PaulaJach" target="_blank"><img class="hero__icon" src="./img/iconmonstr-github.png"/></a>
+                    <a href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank"><img  class="hero__icon" src="./img/iconmonstr-linkedin.png" /></a>
+                    <a href="#contact"><img class="hero__icon" src="./img/iconmonstr-gmail.png" /></a>
                 </div>
                 
             </div>
     </section>
-        
-        
-        
+    <section id="about">
+        about
+    </section>   
+    <section id="skills">
+        skills
+    </section>  
+    <section id="projects">
+        projects
+    </section>  
+    <section id="contact">
+        contact
+    </section>  
+
     </body>
 </html>
