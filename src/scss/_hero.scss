@@ -7,20 +7,33 @@
     align-items: center;
     color: white;
     z-index: 30;
-  
+    .hero__title {
+        letter-spacing: .1rem;
+        font-size: 1.8rem;
+    }
     .hero__img {
         text-align: center;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 1px solid white;
         width: 11rem;
         height: 11rem;
-      
+    }
+    .hero__link {
+        width: 3rem;
+        position: relative;
+        text-align: center;
+        margin: .5rem .7rem;
+        padding-bottom: .3rem;
+    }
+    .hero__link::after {
+        @include hoverStyle;
+        bottom: 0;
+        transform-origin: center;
+    }
+    .hero__link:hover::after {
+        transform: scaleX(1);
     }
     .hero__icon {
-        width: 3rem;
-        margin: 1rem;
-        &:hover {
-            cursor: pointer;
-        }
+        width: 3rem;   
     }
 }

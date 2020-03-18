@@ -1,5 +1,12 @@
+@import './mediaQueries';
+@import './mixins';
+
+
 .header__nav {
     display: flex;
+    @include md {
+        display: none;
+    }
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -9,54 +16,86 @@
     width: 100%;
     padding: 0 1rem;
     border-bottom: 1px solid rgba($color: #fff, $alpha: .1);
-    
     .header__nav--home {
         padding: .5rem;
         color: white; 
+        @include nav-link;   
     }
-    .header__nav--ul {
+    .header__nav--list {
         list-style: none;
         display: inline-flex;
-        z-index: 50;   
+        z-index: 50;  
+        .header__nav--item {
+            position: relative;
+            width: 100%;
+            margin: 0 .5rem;
+        }
+        .header__nav--item::after {
+            @include hoverStyle;
+            bottom: 0;
+            transform-origin: center;
+        }
+        .header__nav--item:hover::after {
+            transform: scaleX(1);
+        }
+        .nav__link {
+            @include nav-link;
+            font-size: 1.2rem;   
+        }   
     }
-    .nav__link {
-        display: inline-block;
-        text-decoration: none;
-        padding: .5rem;
-        color: white; 
-    }
- 
+    
     .nav__CV {
         padding: .5rem;
         margin: .5rem;
         color: white;
         background-color: 0;
-        border: 1px solid white;
+        border: 1px solid rgba($color: #fff, $alpha: 0);
         border-radius: .2rem;
         text-decoration: none;
+        transition: transform .5s;
         &:hover {
-            border: 1px solid red;
+            border: 1px solid white;
         }
     }
 }
 
 .header__nav--mobile {
+    display: none;
+    @include md {
+        display: block;
+    }
     position: fixed;
     top: 5rem;
     right: -300px;
     right: -10rem;
     z-index: 100;
-    
+    width: 10rem;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
     .mobile__nav--list {
         list-style: none;
         position: relative;
+        height: 10rem;
+        width: 100%;
+        text-align: right;
+    }
+    .mobile__nav--item {
+        margin: 1rem 0;
+        margin-right: 3rem;
     }
     .mobile__nav--link {
         text-decoration: none;
-        padding: .5rem;
+        padding-bottom: .2rem;
         color: white;
-        position: relative;  
+        position: relative; 
+        font-size: 1.2rem;  
+    }
+    .mobile__nav--link::after {
+        @include hoverStyle;
+        bottom: 0;
+        transform-origin: right;
+    }
+    .mobile__nav--link:hover::after {
+        transform: scaleX(1);
     }
 }
 
