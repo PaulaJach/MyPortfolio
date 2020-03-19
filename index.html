@@ -138,13 +138,45 @@
         </div>
         
     </section>  
-    <section id="contact">
+    <section id="contact" class="section__contact">
         <div class="container">
             <h2 class="section__title">contact</h2>
+            <div class="contact__wrapper">
+                <div class="contact__info">
+                    <div class="contact__info--text">
+                        <img src="./img/icons/location.png" class="contact__icon"/>
+                        <h4>Location:</h4>
+                        <p class="contact__info--para">Cracow, Poland</p>
+                    </div>
+                    <div class="contact__info--text">
+                        <img src="./img/icons/email.png" class="contact__icon"/>
+                        <h4>E-mail:</h4>
+                        <p class="contact__info--para">paulajach92@gmail.com</p>
+                    </div>
+                    <div class="contact__info--text">
+                        <img src="./img/icons/download.png" class="contact__icon"/>
+                        <a href="./assets/Resume_PaulaJach.pdf" 
+                        download="Resume_PaulaJach" 
+                        target="_blank" class="contact__resume" ><h4>Download my Resume</h4></a>
+                        
+                    </div>
+                </div>
+                <div  class="contact__form--wrapper">
+                    <h4>Contact me!</h4>
+                    <form class="contact__form">
+                        <input type="email" placeholder="Your Email" required class="input"/>
+                        <textarea name="message" rows="5" cols="30" placeholder="Message" required class="contact__textarea"></textarea>
+                        <button type="submit" class="contact__btn">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
         </div>
         
     </section>  
-    <footer></footer>
+    <footer id="footer" class="footer__section">
+        <p class="footer__text">Paula Jach &copy; 2020</p>
+    </footer>
 
     </body>
 </html>
