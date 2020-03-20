@@ -46,7 +46,7 @@
 }
 
 .projects__img {
-    width: 17rem;
+    max-width: 17rem;
     height: 11rem;
     border-radius: .2rem;
     box-shadow: 1px 1px 2px gray;
@@ -59,18 +59,33 @@
     padding-bottom: 0;
     .contact__wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 0 3rem;
+        @include sm {
+            padding: 0 .5rem;
+        }
         margin-bottom: 2rem;
         .contact__info {
-            width: 45%;
+            width: 70%;
+            @include sm {
+                width: 100%;
+               
+            }
             .contact__info--text {
                 display: flex;
                 align-items: center;
+                @include sm {
+                    width: 100%;
+                    font-size: .8rem;
+                }
                 .contact__icon {
                     width: 2rem;
                     margin-right: .7rem;
+                    @include sm {
+                        display: none;
+                    }
                 }
                 .contact__info--para {
                     padding-left: .7rem;
@@ -81,46 +96,13 @@
                 }
             }
         }
-        .contact__form--wrapper {
-            text-align: center;
-            width: 45%;
-        }
-        .contact__form {
+        .contact__socials {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            .input {
-                height: 2rem;
-                @include inputStyle;
-               
-                &:hover {
-                    @include inputHoverStyle;
-                }
-                &::placeholder {
-                    color: white;
-                }  
-            }
-            .contact__textarea {
-                @include inputStyle;
-                &:hover {
-                    @include inputHoverStyle;
-                }
-                &::placeholder {
-                    color: white;
-                }
-            }
-            .contact__btn {
-                padding: .5rem;
-                border-radius: .2rem;
-                background-color: #40536b;
-                color: white;
-                font-size: .8rem;
-                margin: .5rem 0;
-                &:hover {
-                    cursor: pointer;
-                    background-color: #506785;
-                }
-            }
+            justify-content: center;
+        }
+        .contact__icon {
+            width: 4rem;
+            margin: 1rem;
         }
     }
 }
