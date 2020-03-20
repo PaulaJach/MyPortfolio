@@ -33,6 +33,25 @@
     }
 }
 
+.projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    .projects__item {
+        margin: 1rem 2rem;
+        text-align: center;
+        
+    }
+}
+
+.projects__img {
+    width: 17rem;
+    height: 11rem;
+    border-radius: .2rem;
+    box-shadow: 1px 1px 2px gray;
+}
+
 .section__contact {
     background-color: (map-get($map: $bg-colors, $key: contact__section));
     color: white;
