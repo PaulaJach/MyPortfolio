@@ -7,24 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#header">
         <section class="landing__page">
             <div id="particles-js" class="particles__container"></div>
             <header id="header" class="header">
                 <nav class="header__nav">
-                    <a href="#home" class="header__nav--home">home</a>
+                    <a href="#home" class="header__nav--home scrollable">home</a>
                     <ul class="header__nav--list">
                         <li class="header__nav--item">
-                            <a href="#about" class="nav__link">about</a>
+                            <a href="#about" class="nav__link scrollable">about</a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#technologies" class="nav__link">technologies</a>
+                            <a href="#technologies" class="nav__link scrollable">technologies</a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#projects" class="nav__link">projects</a>
+                            <a href="#projects" class="nav__link scrollable">projects</a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#contact" class="nav__link">contact</a>
+                            <a href="#contact" class="nav__link scrollable">contact</a>
                         </li>
                     </ul>
                     <a href="./assets/Resume_PaulaJach.pdf" 
@@ -42,16 +42,16 @@
                     </div>
                     <ul class="mobile__nav--list">
                         <li class="mobile__nav--item">
-                            <a href="#about" class="mobile__nav--link">about</a>
+                            <a href="#about" class="mobile__nav--link scrollable">about</a>
                         </li>
                         <li class="mobile__nav--item">
-                            <a href="#technologies" class="mobile__nav--link">technologies</a>
+                            <a href="#technologies" class="mobile__nav--link scrollable">technologies</a>
                         </li>
                         <li class="mobile__nav--item">
-                            <a href="#projects" class="mobile__nav--link">projects</a>
+                            <a href="#projects" class="mobile__nav--link scrollable">projects</a>
                         </li>
                         <li class="mobile__nav--item">
-                            <a href="#contact" class="mobile__nav--link">contact</a>
+                            <a href="#contact" class="mobile__nav--link scrollable">contact</a>
                         </li>
                     </ul>
                 </nav> 
@@ -66,139 +66,141 @@
                 </div>
             </div>
     </section>
-    <section id="about" class="section__about">
-        <div class="container">
-            <h2 class="section__title">about me</h2>
-            <article class="about__article">
-                <p>Hi! My name is Paula. I live in Cracow.</p>
-                <p>About a year ago I started my yourney with frontend web development. I am looking for intern or a first job as a Junior Frontend Developer.
-                I am very motivated and open to learn new frontend technologies and frameworks. Currently I am focused on studying React and Redux.</p>
-                <p>Behind learning, I spend time singing and plying guitar or piano.</p>
-            </article>
-        </div>
-    </section>   
-    <section id="technologies" class="section__technologies">
-        <div class="container">
-            <h2 class="section__title">technologies</h2>
-            <p class="technologies__info">Every time I work on a new project, I try to make it to be fully responsive.</p>
-            <p class="technologies__info">Beside Flexbox and Grid technologies, in my projects I use:</p>
-            <div class="technologies__icons--list">
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/html5.png">
-                    <h5 class="technologies__icon--title">html5</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/css.png">
-                    <h5 class="technologies__icon--title">css3</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/js.png">
-                    <h5 class="technologies__icon--title">JavaScript/ES6</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/bootstrap.png">
-                    <h5 class="technologies__icon--title">bootstrap</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/materialize.png">
-                    <h5 class="technologies__icon--title">materialize</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/sass.png">
-                    <h5 class="technologies__icon--title">sass</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/webpack.png">
-                    <h5 class="technologies__icon--title">webpack</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/yarn.png">
-                    <h5 class="technologies__icon--title">yarn</h5>
-                </div>
-                
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/git.png">
-                    <h5 class="technologies__icon--title">git</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/react.png">
-                    <h5 class="technologies__icon--title">react</h5>
-                </div>
-                <div class="technologies__icon--wrapper">
-                    <img class="technologies__icon" src="./img/icons/redux.png">
-                    <h5 class="technologies__icon--title">redux</h5>
-                </div>
+    <main>
+        <section id="about" class="section__about offset">
+            <div class="container">
+                <h2 class="section__title">about me</h2>
+                <article class="about__article">
+                    <p>Hi! My name is Paula. I live in Cracow.</p>
+                    <p>About a year ago I started my yourney with frontend web development. I am looking for intern or a first job as a Junior Frontend Developer.
+                    I am very motivated and open to learn new frontend technologies and frameworks. Currently I am focused on studying React and Redux.</p>
+                    <p>Behind learning, I spend time singing and plying guitar or piano.</p>
+                </article>
             </div>
-        </div>
-        
-    </section>  
-    <section id="projects" class="section__projects">
-        <div class="container">
-            <h2 class="section__title">projects</h2>
-            <div class="projects__wrapper">
-                <div class="projects__item">
-                    <img src="./img/projects/renowator.png" class="projects__img"/> 
-                    <h4>renowator.info.pl</h4>
-                </div>
-                <div class="projects__item">
-                    <img src="./img/projects/helena.png" class="projects__img"/> 
-                    <h4>babcia-helena.pl</h4>
-                </div>
-                <div class="projects__item">
-                    <img src="./img/projects/floor.png" class="projects__img"/> 
-                    <h4>perfectfloor.pl</h4>
-                </div>
-                <div class="projects__item">
-                    <img src="./img/projects/elena.png" class="projects__img"/> 
-                    <h4>Elena Email PSD to HTML</h4>
-                </div>
-                <div class="projects__item">
-                    <img src="./img/projects/weather.png" class="projects__img"/> 
-                    <h4>Check Weather App</h4>
-                </div>
-                <div class="projects__item">
-                    <img src="./img/projects/maze.png" class="projects__img"/> 
-                    <h4>Maze Game</h4>
-                </div>
-            </div>
-        </div>
-        
-    </section>  
-    <section id="contact" class="section__contact">
-        <div class="container">
-            <h2 class="section__title">contact</h2>
-            <div class="contact__wrapper">
-                <div class="contact__info">
-                    <div class="contact__info--text">
-                        <img src="./img/icons/location.png" class="contact__icon"/>
-                        <h4>Location:</h4>
-                        <p class="contact__info--para">Cracow, Poland</p>
+        </section>   
+        <section id="technologies" class="section__technologies">
+            <div class="container">
+                <h2 class="section__title">technologies</h2>
+                <p class="technologies__info">Every time I work on a new project, I try to make it to be fully responsive.</p>
+                <p class="technologies__info">Beside Flexbox and Grid technologies, in my projects I use:</p>
+                <div class="technologies__icons--list">
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/html5.png">
+                        <h5 class="technologies__icon--title">html5</h5>
                     </div>
-                    <div class="contact__info--text">
-                        <img src="./img/icons/email.png" class="contact__icon"/>
-                        <h4>E-mail:</h4>
-                        <a href="mailto:paulajach92@gmail.com"><p class="contact__info--para">paulajach92@gmail.com</p></a>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/css.png">
+                        <h5 class="technologies__icon--title">css3</h5>
                     </div>
-                    <div class="contact__info--text">
-                        <img src="./img/icons/download.png" class="contact__icon"/>
-                        <a href="./assets/Resume_PaulaJach.pdf" 
-                        download="Resume_PaulaJach" 
-                        target="_blank" class="contact__resume" ><h4>Download my Resume</h4></a>
-                        
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/js.png">
+                        <h5 class="technologies__icon--title">JavaScript/ES6</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/bootstrap.png">
+                        <h5 class="technologies__icon--title">bootstrap</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/materialize.png">
+                        <h5 class="technologies__icon--title">materialize</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/sass.png">
+                        <h5 class="technologies__icon--title">sass</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/webpack.png">
+                        <h5 class="technologies__icon--title">webpack</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/yarn.png">
+                        <h5 class="technologies__icon--title">yarn</h5>
+                    </div>
+                    
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/git.png">
+                        <h5 class="technologies__icon--title">git</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/react.png">
+                        <h5 class="technologies__icon--title">react</h5>
+                    </div>
+                    <div class="technologies__icon--wrapper">
+                        <img class="technologies__icon" src="./img/icons/redux.png">
+                        <h5 class="technologies__icon--title">redux</h5>
                     </div>
                 </div>
-                <div class="contact__socials">
-                    <a href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank">
-                        <img src="./img/iconmonstr-linkedin.png" alt="linkedIn profile" class="contact__icon">
-                    </a>
-                    <a href="https://github.com/PaulaJach" target="_blank">
-                        <img src="./img/iconmonstr-github.png" alt="github profile" class="contact__icon">
-                    </a>
-                </div> 
             </div>
-        </div>
-        
-    </section>  
+            
+        </section>  
+        <section id="projects" class="section__projects scrollable">
+            <div class="container">
+                <h2 class="section__title">projects</h2>
+                <div class="projects__wrapper">
+                    <div class="projects__item">
+                        <img src="./img/projects/renowator.png" class="projects__img"/> 
+                        <h4>renowator.info.pl</h4>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./img/projects/helena.png" class="projects__img"/> 
+                        <h4>babcia-helena.pl</h4>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./img/projects/floor.png" class="projects__img"/> 
+                        <h4>perfectfloor.pl</h4>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./img/projects/elena.png" class="projects__img"/> 
+                        <h4>Elena Email PSD to HTML</h4>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./img/projects/weather.png" class="projects__img"/> 
+                        <h4>Check Weather App</h4>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./img/projects/maze.png" class="projects__img"/> 
+                        <h4>Maze Game</h4>
+                    </div>
+                </div>
+            </div>
+            
+        </section>  
+        <section id="contact" class="section__contact scrollable">
+            <div class="container">
+                <h2 class="section__title">contact</h2>
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <div class="contact__info--text">
+                            <img src="./img/icons/location.png" class="contact__icon"/>
+                            <h4>Location:</h4>
+                            <p class="contact__info--para">Cracow, Poland</p>
+                        </div>
+                        <div class="contact__info--text">
+                            <img src="./img/icons/email.png" class="contact__icon"/>
+                            <h4>E-mail:</h4>
+                            <a href="mailto:paulajach92@gmail.com"><p class="contact__info--para">paulajach92@gmail.com</p></a>
+                        </div>
+                        <div class="contact__info--text">
+                            <img src="./img/icons/download.png" class="contact__icon"/>
+                            <a href="./assets/Resume_PaulaJach.pdf" 
+                            download="Resume_PaulaJach" 
+                            target="_blank" class="contact__resume" ><h4>Download my Resume</h4></a>
+                            
+                        </div>
+                    </div>
+                    <div class="contact__socials">
+                        <a href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank">
+                            <img src="./img/iconmonstr-linkedin.png" alt="linkedIn profile" class="contact__icon">
+                        </a>
+                        <a href="https://github.com/PaulaJach" target="_blank">
+                            <img src="./img/iconmonstr-github.png" alt="github profile" class="contact__icon">
+                        </a>
+                    </div> 
+                </div>
+            </div>
+            
+        </section> 
+    </main> 
     <footer id="footer" class="footer__section">
         <p class="footer__text">Paula Jach &copy; 2020</p>
     </footer>
