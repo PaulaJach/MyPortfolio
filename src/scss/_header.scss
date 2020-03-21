@@ -1,12 +1,11 @@
 @import './mediaQueries';
 @import './mixins';
 
-.solid {
-        
+.solid { 
     background-color: black;
     transition: background-color 1s ease 0s;
-  }
-  
+}
+
 .header__nav {
     display: flex;
     @include md {
@@ -72,8 +71,7 @@
     }
     position: fixed;
     top: 5rem;
-    right: -300px;
-    right: -10rem;
+    right: -12rem;
     z-index: 100;
     width: 12rem;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
@@ -83,6 +81,7 @@
         height: 10rem;
         width: 100%;
         text-align: right;
+        
     }
     .mobile__nav--item {
         margin: 1rem 0;
@@ -103,6 +102,10 @@
     .mobile__nav--link:hover::after {
         transform: scaleX(1);
     }
+}
+.hamburger__color {
+    background-color: black;
+    transition: background-color 1s ease 0s;
 }
 
 .hamburger {

@@ -8,11 +8,11 @@
         
     </head>
     <body data-spy="scroll" data-target="#header">
-        <section class="landing__page">
+        <section class="landing__page" id="landing__page">
             <div id="particles-js" class="particles__container"></div>
-            <header id="header" class="header">
+            <header id="header" class="header" data-target="#header">
                 <nav class="header__nav">
-                    <a href="#home" class="header__nav--home scrollable">home</a>
+                    <a href="#landing__page" class="header__nav--home scrollable">home</a>
                     <ul class="header__nav--list">
                         <li class="header__nav--item">
                             <a href="#about" class="nav__link scrollable">about</a>
@@ -62,7 +62,7 @@
                 <div>
                     <a class="hero__link" href="https://github.com/PaulaJach" target="_blank"><img class="hero__icon" src="./img/iconmonstr-github.png"/></a>
                     <a class="hero__link" href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank"><img  class="hero__icon" src="./img/iconmonstr-linkedin.png" /></a>
-                    <a class="hero__link" href="#contact"><img class="hero__icon" src="./img/iconmonstr-gmail.png" /></a>
+                    <a class="hero__link scrollable" href="#contact"><img class="hero__icon" src="./img/iconmonstr-gmail.png" /></a>
                 </div>
             </div>
     </section>

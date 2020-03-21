@@ -16,9 +16,20 @@ const menuIcon = document.querySelector('.hamburger');
 const navbar = document.querySelector('.header__nav--mobile');
   
 menuIcon.addEventListener('click', () => {
-  console.log('click')
     navbar.classList.toggle('change');
-    menuIcon.classList.add('open');
+    navbar.classList.add('open');
+});
+
+//Close nav after click
+$(document).ready(function() {
+  $(document).click(function(event) {
+      const clickover = $(event.target);
+      const opened = $(".header__nav--mobile").hasClass("open");
+      if (opened === true && !clickover.hasClass("hamburger")) {
+          $(".hamburger").click();
+      }
+  });
+
 });
 
 //Smooth scrolling
@@ -37,16 +48,18 @@ $(document).ready(function() {
   });
 });
 
-// change header after scrolling 
+// change header bg-color after scrolling 
 
 $(document).ready(function() {
   $(window).scroll(function() {
       if ($(this).scrollTop() > 500) {
         $('.header__nav').addClass('solid');
         $('.header__nav--mobile').addClass('solid');
+        $('.header__nav--mobile .hamburger .line').css('background-color', 'black');
       } else {
         $('.header__nav').removeClass('solid');
         $('.header__nav--mobile').removeClass('solid');
+        $('.header__nav--mobile .hamburger .line').css('background-color', 'white');
       }
   });
 });
