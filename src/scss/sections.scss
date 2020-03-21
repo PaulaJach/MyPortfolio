@@ -8,19 +8,27 @@
 .about__wrapper {
     display: flex;
     justify-content: center;
+  
     align-items: center;
-
-}
-
-.about__article {
-    font-size: 1.2rem;
-    color: (map-get($map: $colors, $key: primary__text));
-    width: 45%;
-}
-.about__img {
-    width: 45%;
-    .about__img--icon {
-        width: 25rem;
+    .about__article {
+        font-size: 1.2rem;
+        color: (map-get($map: $colors, $key: primary__text));
+        width: 45%;
+        text-align: justify;
+        @include sm {
+            width: 100%;
+        }
+    }
+    .about__img {
+        width: 45%;
+        display: block;
+        @include sm {
+            display: none;
+        }
+       
+        .about__img--icon {
+            width: 25rem;
+        }
     }
 }
 
@@ -134,10 +142,6 @@
                 }
                 .contact__info--para {
                     padding-left: .7rem;
-                    color: white;
-                    text-decoration: none;
-                }
-                .contact__resume {
                     color: white;
                     text-decoration: none;
                 }
