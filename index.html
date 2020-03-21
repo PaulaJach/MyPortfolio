@@ -70,12 +70,20 @@
         <section id="about" class="section__about offset">
             <div class="container">
                 <h2 class="section__title">about me</h2>
-                <article class="about__article">
-                    <p>Hi! My name is Paula. I live in Cracow.</p>
-                    <p>About a year ago I started my yourney with frontend web development. I am looking for intern or a first job as a Junior Frontend Developer.
-                    I am very motivated and open to learn new frontend technologies and frameworks. Currently I am focused on studying React and Redux.</p>
-                    <p>Behind learning, I spend time singing and plying guitar or piano.</p>
-                </article>
+                <div class="about__wrapper">
+                    <div class="about__img">
+                        <img src="./img/webDev.png" alt="picture" class="about__img--icon">
+                    </div>
+                    <article class="about__article">
+                        <p>Hi! My name is Paula. I live in Cracow.</p>
+                        <p>About a year ago I started my yourney with frontend web development. I am looking for intern or a first job as a Junior Frontend Developer.
+                        I am very motivated and open to learn new frontend technologies and frameworks. Currently I am focused on studying React and Redux.</p>
+                        <p>Behind learning, I spend time singing and plying guitar or piano.</p>
+                    </article>
+                </div>
+               
+               
+
             </div>
         </section>   
         <section id="technologies" class="section__technologies">
@@ -116,7 +124,6 @@
                         <img class="technologies__icon" src="./img/icons/yarn.png">
                         <h5 class="technologies__icon--title">yarn</h5>
                     </div>
-                    
                     <div class="technologies__icon--wrapper">
                         <img class="technologies__icon" src="./img/icons/git.png">
                         <h5 class="technologies__icon--title">git</h5>
@@ -139,27 +146,40 @@
                 <div class="projects__wrapper">
                     <div class="projects__item">
                         <img src="./img/projects/renowator.png" class="projects__img"/> 
-                        <h4>renowator.info.pl</h4>
+                        <a href="https://renowator.info/" class="projects__link" target="_blank">
+                            <h5 class="projects__link-info">renowator.info.pl</h5>
+                        </a>
                     </div>
                     <div class="projects__item">
                         <img src="./img/projects/helena.png" class="projects__img"/> 
-                        <h4>babcia-helena.pl</h4>
+                       <a href="https://babcia-helena.pl/" target="_blank" class="projects__link">
+                        <h5 class="projects__link-info">babcia-helena.pl</h5>
+                    </a> 
                     </div>
                     <div class="projects__item">
                         <img src="./img/projects/floor.png" class="projects__img"/> 
-                        <h4>perfectfloor.pl</h4>
+                        <a href="https://perfectfloor.pl/" target="_blank" class="projects__link">
+                            <h5 class="projects__link-info">perfectfloor.pl</h5>
+                        </a>
                     </div>
                     <div class="projects__item">
-                        <img src="./img/projects/elena.png" class="projects__img"/> 
-                        <h4>Elena Email PSD to HTML</h4>
+                        <img src="./img/projects/elena.png" class="projects__img"/>
+                        <a href="https://github.com/PaulaJach" target="_blank" class="projects__link">
+                            <h5 class="projects__link-info">PSD to HTML</h5>
+                        </a> 
                     </div>
                     <div class="projects__item">
                         <img src="./img/projects/weather.png" class="projects__img"/> 
-                        <h4>Check Weather App</h4>
+                        <a href="https://github.com/PaulaJach" target="_blank" class="projects__link">
+                            <h5 class="projects__link-info">Check Weather App</h5>
+                        </a>
+                        
                     </div>
                     <div class="projects__item">
                         <img src="./img/projects/maze.png" class="projects__img"/> 
-                        <h4>Maze Game</h4>
+                        <a href="https://github.com/PaulaJach" target="_blank" class="projects__link">
+                            <h5 class="projects__link-info">Maze Game</h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -178,7 +198,7 @@
                         <div class="contact__info--text">
                             <img src="./img/icons/email.png" class="contact__icon"/>
                             <h4>E-mail:</h4>
-                            <a href="mailto:paulajach92@gmail.com"><p class="contact__info--para">paulajach92@gmail.com</p></a>
+                            <a href="mailto:paulajach92@gmail.com" class="contact__info--para"><p>paulajach92@gmail.com</p></a>
                         </div>
                         <div class="contact__info--text">
                             <img src="./img/icons/download.png" class="contact__icon"/>
@@ -187,15 +207,16 @@
                             target="_blank" class="contact__resume" ><h4>Download my Resume</h4></a>
                             
                         </div>
+                        <div class="contact__socials">
+                            <a href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank">
+                                <img src="./img/iconmonstr-linkedin.png" alt="linkedIn profile" class="contact__icon--social">
+                            </a>
+                            <a href="https://github.com/PaulaJach" target="_blank">
+                                <img src="./img/iconmonstr-github.png" alt="github profile" class="contact__icon--social">
+                            </a> 
+                        </div> 
                     </div>
-                    <div class="contact__socials">
-                        <a href="https://www.linkedin.com/in/paula-jach-26a22bb7/" target="_blank">
-                            <img src="./img/iconmonstr-linkedin.png" alt="linkedIn profile" class="contact__icon">
-                        </a>
-                        <a href="https://github.com/PaulaJach" target="_blank">
-                            <img src="./img/iconmonstr-github.png" alt="github profile" class="contact__icon">
-                        </a>
-                    </div> 
+                    <img src="./img/undraw_static_assets_.png" alt="icon" class="contact__img">
                 </div>
             </div>
             
@@ -203,6 +224,9 @@
     </main> 
     <footer id="footer" class="footer__section">
         <p class="footer__text">Paula Jach &copy; 2020</p>
+        <a href="#landing__page" class="scroll__top scrollable"  aria-label="strzałka do góry">
+            <img src="./img/icons/up_arrow.png" alt="strzałka do góry" class="scroll__top--arrow"/>
+        </a>
     </footer>
 
     </body>
