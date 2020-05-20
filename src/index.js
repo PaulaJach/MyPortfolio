@@ -4,8 +4,6 @@ import 'jquery';
 
 
 
-
-
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
@@ -55,7 +53,7 @@ $(document).ready(function() {
       if ($(this).scrollTop() > 500) {
         $('.header__nav').addClass('solid');
         $('.header__nav--mobile').addClass('solid');
-        $('.header__nav--mobile .hamburger .line').css('background-color', 'black');
+        $('.header__nav--mobile .hamburger .line').css('background-color', '#1d2935');
       } else {
         $('.header__nav').removeClass('solid');
         $('.header__nav--mobile').removeClass('solid');

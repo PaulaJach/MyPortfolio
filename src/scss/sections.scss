@@ -1,8 +1,12 @@
 @import './mediaQueries';
 @import './mixins';
 
+
+.section {
+    margin-top: 1rem;
+}
 .section__title {
-    text-transform: capitalize;
+    @include sectionTitle;
 }
 
 .about__wrapper {
@@ -15,17 +19,16 @@
         color: (map-get($map: $colors, $key: primary__text));
         width: 45%;
         text-align: justify;
-        @include sm {
+        @include md {
             width: 100%;
         }
     }
     .about__img {
         width: 45%;
         display: block;
-        @include sm {
+        @include md {
             display: none;
         }
-       
         .about__img--icon {
             width: 25rem;
         }
@@ -38,6 +41,8 @@
     .technologies__info {
         font-size: $paragraph_fontSize;
         color: (map-get($map: $colors, $key: primary__text));
+        padding: 1rem 2rem;
+        text-align: justify;
     }
     .technologies__icons--list {
         display: flex;
@@ -46,6 +51,7 @@
         .technologies__icon--wrapper {
             margin: 1.2rem;
             text-align: center;
+            
         }
     }
     .technologies__icon {
@@ -99,9 +105,10 @@
     background-color: rgba($color: #000, $alpha: .7);
     color: white;
     border-radius: .2rem;
-    padding: .5rem;
-    
-    
+    padding: .5rem;    
+}
+.projects__description {
+    margin-top: 1rem;
 }
 
 .section__contact {
@@ -124,6 +131,7 @@
             width: 50%;
             @include sm {
                 width: 100%;
+                text-align: center;
                
             }
             .contact__info--text {
@@ -132,6 +140,7 @@
                 @include sm {
                     width: 100%;
                     font-size: .8rem;
+                    justify-content: center;
                 }
                 .contact__icon {
                     width: 2rem;
@@ -149,7 +158,7 @@
         }
         .contact__socials {
             .contact__icon--social {
-                width: 2rem;
+                width: 2.2rem;
                 // margin-right: 1rem;
                 // margin-top: 1rem;
                 margin: 1rem 1rem 1rem 0;
