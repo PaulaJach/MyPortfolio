@@ -18,6 +18,7 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.add('open');
 });
 
+
 //Close nav after click
 $(document).ready(function() {
   $(document).click(function(event) {
