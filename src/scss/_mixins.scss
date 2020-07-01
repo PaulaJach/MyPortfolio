@@ -9,6 +9,7 @@
 @mixin sectionTitle {
     text-transform: capitalize;
     color: map-get($map: $colors, $key: sections__title--text);
+    padding-left: 2rem;
     @include sm {
         width: 100%;
         text-align: center;

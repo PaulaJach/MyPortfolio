@@ -43,7 +43,8 @@
         font-size: $paragraph_fontSize;
         color: (map-get($map: $colors, $key: primary__text));
         padding: 1rem 2rem;
-        text-align: justify;
+        text-align: center;
+        
     }
     .technologies__icons--list {
         display: flex;
