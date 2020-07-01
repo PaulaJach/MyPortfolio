@@ -1,5 +1,6 @@
-@import './media-queries';
-@import './mixins';
+// @import './media-queries';
+// @import './mixins';
+// @import './variables';
 
 
 .section {
@@ -145,13 +146,13 @@
                 .contact__icon {
                     width: 2rem;
                     margin-right: .7rem;
-                    @include sm {
-                        display: none;
-                    }
+                    // @include sm {
+                    //     display: none;
+                    // }
                 }
                 .contact__info--para {
                     padding-left: .7rem;
-                    color: white;
+                    color: (map-get($map: $colors, $key: primary__text));
                     text-decoration: none;
                 }
             }
@@ -162,6 +163,7 @@
                 // margin-right: 1rem;
                 // margin-top: 1rem;
                 margin: 1rem 1rem 1rem 0;
+                
             }  
         }
         .contact__img {
