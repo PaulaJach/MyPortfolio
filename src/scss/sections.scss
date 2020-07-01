@@ -67,12 +67,15 @@
         text-transform: capitalize;
     }
 }
-
+.projects__subtitle {
+    padding-left: 2rem;
+}
 .projects__wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
+    
     .projects__item {
         margin: 1rem 2rem;
         text-align: center;
@@ -146,14 +149,11 @@
                 @include sm {
                     width: 100%;
                     font-size: .8rem;
-                    justify-content: center;
+                    justify-content: start;
                 }
                 .contact__icon {
                     width: 2rem;
                     margin-right: .7rem;
-                    // @include sm {
-                    //     display: none;
-                    // }
                 }
                 .contact__info--para {
                     padding-left: .7rem;
