@@ -28,3 +28,10 @@
     transition: transform .5s;
 }
 
+@mixin sectionParagraph {
+    font-size: 1.2rem;
+    color: (map-get($map: $colors, $key: primary__text));
+    text-align: justify;
+    padding: 0 2rem;
+}
+

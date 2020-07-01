@@ -10,6 +10,10 @@
     @include sectionTitle;
 }
 
+.section__text {
+    @include sectionParagraph;
+}
+
 .about__wrapper {
     display: flex;
     justify-content: center;
