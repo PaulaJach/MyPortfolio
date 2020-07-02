@@ -10,9 +10,11 @@
     text-transform: capitalize;
     color: map-get($map: $colors, $key: sections__title--text);
     padding-left: 2rem;
+    margin-bottom: 2rem;
     @include sm {
         width: 100%;
         text-align: center;
+        padding-left: 0;
     }
 }
 
@@ -33,5 +35,8 @@
     color: (map-get($map: $colors, $key: primary__text));
     text-align: justify;
     padding: 0 2rem;
+    @include sm {
+        padding: 0 1rem;
+    }
 }
 

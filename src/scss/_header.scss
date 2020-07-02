@@ -70,6 +70,7 @@
 }
 
 .header__nav--mobile {
+    opacity: .9;
     display: none;
     @include md {
         display: block;
@@ -78,7 +79,7 @@
     top: 5rem;
     right: -12rem;
     z-index: 100;
-    width: 12rem;
+    width: 10rem;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
     .mobile__nav--list {
         list-style: none;
@@ -86,6 +87,7 @@
         height: 10rem;
         width: 100%;
         text-align: right;
+        padding-left: 0;
         
     }
     .mobile__nav--item {
