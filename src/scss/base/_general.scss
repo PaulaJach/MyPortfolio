@@ -1,0 +1,32 @@
+@import '../utilities/variables';
+@import '../utilities/media-queries';
+@import '../utilities/mixins';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
+.landing__page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    z-index: 20;
+    background: rgb(29,16,60);
+    background: linear-gradient(45deg, #182848 50%, #4b6cb7 100%);
+}
+.particles__container {
+    height: 100vh;
+    z-index: 10;
+}
+.container {
+    padding: 4rem 6rem;
+    @include sm {
+        padding: 1rem 2rem;
+    }
+}
