@@ -10,6 +10,7 @@ The project is based on Responsive Web Design, without using any CSS framework. 
 * Webpack
 * particles.js library
 * Yarn
+* BEM methodology
 
 ## Live preview:
 https://paulajach.pl/
