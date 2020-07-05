@@ -61,3 +61,8 @@ $(document).ready(function() {
         }
     });
 });
+
+//lazy loading for images
+$('[data-src]').each(function(_, element) {
+    element.src = element.dataset.src;
+});
