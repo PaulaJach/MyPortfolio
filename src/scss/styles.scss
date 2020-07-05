@@ -1,12 +1,16 @@
 @import './base/general';
 @import './sections/header';
 @import './sections/hero';
+@import './sections/about';
+@import './sections/technologies';
+@import './sections/projects';
+@import './sections/contact';
+@import './sections/footer';
 @import './utilities/variables';
 @import './utilities/media-queries';
 @import './utilities/mixins';
-@import './sections.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Lobster&display=swap');
+
 
 

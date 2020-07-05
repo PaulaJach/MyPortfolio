@@ -10,6 +10,18 @@ body {
     padding: 0;
     font-family: $main-font;
 }
+
+.section {
+    margin-top: 1rem;
+}
+.section__title {
+    @include sectionTitle;
+}
+
+.section__text {
+    @include sectionParagraph;
+}
+
 .landing__page {
     position: relative;
     display: flex;

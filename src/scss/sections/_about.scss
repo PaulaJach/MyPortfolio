@@ -1,0 +1,27 @@
+
+
+.about__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about__article {
+        font-size: 1.2rem;
+        color: (map-get($map: $colors, $key: primary__text));
+        width: 45%;
+        text-align: justify;
+        padding: 0 1rem;
+        @include md {
+            width: 100%;
+        }
+    }
+    .about__img {
+        width: 45%;
+        display: block;
+        @include md {
+            display: none;
+        }
+        .about__img--icon {
+            width: 25rem;
+        }
+    }
+}

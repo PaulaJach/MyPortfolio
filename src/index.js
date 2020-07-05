@@ -3,13 +3,13 @@ import "particles.js";
 import 'jquery';
 
 
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+// particlesJS.load(@dom-id, @path-json, @callback (optional))
 particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
 
 
+// open mobile menu
 const menuIcon = document.querySelector('.hamburger');
 const navbar = document.querySelector('.header__nav--mobile');
   
@@ -19,7 +19,7 @@ menuIcon.addEventListener('click', () => {
 });
 
 
-//Close nav after click
+//close nav after click
 $(document).ready(function() {
   $(document).click(function(event) {
       const clickover = $(event.target);
@@ -32,12 +32,11 @@ $(document).ready(function() {
 });
 
 //Smooth scrolling
-
 $(document).ready(function() {
   $("a.scrollable").on('click', function(event) {
       if (this.hash !== "") {
           event.preventDefault();
-          var hash = this.hash;
+          const hash = this.hash;
           $('html, body').animate({
               scrollTop: $(hash).offset().top
           }, 1000, function() {
@@ -47,8 +46,8 @@ $(document).ready(function() {
   });
 });
 
-// change header bg-color after scrolling 
 
+// change header bg-color after scrolling 
 $(document).ready(function() {
   $(window).scroll(function() {
       if ($(this).scrollTop() > 500) {

@@ -1,0 +1,22 @@
+.footer__section {
+    background-color: (map-get($map: $bg-colors, $key: footer));
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    .footer__text {
+        padding: .7rem;
+        margin: 0;
+    }
+    .scroll__top {
+        position: fixed;
+        bottom: .2rem;
+        right: 3rem;
+        @include sm {
+            right: 1rem;
+        }
+        .scroll__top--arrow {
+            width: 2rem;
+        }
+    }
+}
